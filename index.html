@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Gifts Prank</title>
+<style>
+body {
+  background: #101010;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+.card {
+  background: #202020;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 350px;
+}
+button {
+  background: #fe2c55;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 17px;
+  margin: 8px;
+}
+.gift {
+  font-size: 55px;
+}
+.notice {
+  color: #ffd166;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+<h1>🎁 TikTok Gifts</h1>
+<p>Welcome to my LIVE Prank Demo!</p>
+
+<div class="card">
+  <p class="notice">DEMO ONLY — No real gifts or money</p>
+  <div class="gift" id="gift">🎁</div>
+  <h2 id="name">Choose a Gift</h2>
+  <p id="message">Tap a button to test the animation.</p>
+
+  <button onclick="showGift('🌹','Rose')">🌹 Rose</button>
+  <button onclick="showGift('🦁','Lion')">🦁 Lion</button>
+  <button onclick="showGift('🌌','Universe')">🌌 Universe</button>
+</div>
+
+<script>
+function showGift(emoji, name) {
+  document.getElementById('gift').textContent = emoji;
+  document.getElementById('name').textContent = name;
+  document.getElementById('message').textContent =
+    'Demo animation! 🎉';
+}
+</script>
+
+</body>
+  </html>
